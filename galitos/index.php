@@ -18,9 +18,9 @@
    <?php
 
 $servername= 'localhost'; 
-$username= 'pequeno'; 
-$password= '12345678901'; 
-
+$username= 'id20481078_pequeno_db'; 
+$password= 'Wag1234566543§'; 
+$nomedodb= 'id20481078_pequeno';
  
 
 $conn= new mysqli ( $servername , $username , $password ); 
