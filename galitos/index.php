@@ -23,7 +23,7 @@ $password= 'Wag1234566543§';
 $nomedodb= 'id20481078_pequeno';
  
 
-$conn= new mysqli ( $servername , $username , $password ); 
+$conn= new mysqli ( $servername , $username , $password,$nomedodb ); 
 
 If ($conn->connect_error){	  
 
