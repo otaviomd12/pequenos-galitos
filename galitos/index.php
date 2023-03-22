@@ -31,7 +31,19 @@ Die ('Conecção Falhou'. $conn->connect_error);}
 
 Echo  'conectado ao DB!'. '<br>';
 
- 
+ // lembrar de baixar o código atualizado para fazer o uplowad no site
+
+$squl= 'SELECT nome,sobrenome, telefone FROM alunos';
+
+$result= $conn -> querry ($sql);
+
+if ($result -> num_rows>0){ 
+while($row= $result -> fetch_assoc() ){
+
+echo 'nome:'. $row [nome]. $row [sobrenome]. 'telefone:'. $row [telefone].'<br>';}
+} else { echo ' tabela vazia ';}
+
+$conn -> close
 
 ?> 
 
