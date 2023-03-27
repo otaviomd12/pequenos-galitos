@@ -33,7 +33,7 @@ Echo  'conectado ao DB!'. '<br>';
 
  // lembrar de baixar o código atualizado para fazer o uplowad no site
 
-$sql= 'SELECT nome,sobrenome, telefone FROM db';
+$sql= "SELECT nome,sobrenome, telefone FROM db";
 
 $result= $conn -> query ($sql);
 
