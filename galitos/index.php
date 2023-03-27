@@ -37,15 +37,16 @@ $sql= 'SELECT nome,sobrenome, telefone FROM db';
 
 $result= $conn -> query ($sql);
 
-if ($result -> num_rows>0){ 
-while($row= $result -> fetch_assoc() ){
+if ($resultado->num_rows > 0) {
+    while ($linha = $resultado->fetch_assoc()) {
+        echo $linha["nome"] . " " . $linha["sobrenome"] . " - " . $linha["telefone"] . "<br>";
+    }
+} else {
+    echo "Nenhum registro encontrado.";
+}
 
-echo 'nome:'. $row [nome]. $row [sobrenome]. 'telefone:'. $row [telefone].'<br>';}
-} else { echo ' tabela vazia ';}
-
-$conn -> close ();
-
-?> 
+$conn->close();
+?>
 
 </body>
 </html>
