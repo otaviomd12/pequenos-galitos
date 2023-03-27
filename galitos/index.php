@@ -43,7 +43,7 @@ while($row= $result -> fetch_assoc() ){
 echo 'nome:'. $row [nome]. $row [sobrenome]. 'telefone:'. $row [telefone].'<br>';}
 } else { echo ' tabela vazia ';}
 
-$conn -> close;
+$conn -> close ();
 
 ?> 
 
