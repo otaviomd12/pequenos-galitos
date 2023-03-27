@@ -37,8 +37,8 @@ $sql= 'SELECT nome,sobrenome, telefone FROM db';
 
 $result= $conn -> query ($sql);
 
-if ($resultado->num_rows > 0) {
-    while ($linha = $resultado->fetch_assoc()) {
+if ($result->num_rows > 0) {
+    while ($linha = $result->fetch_assoc()) {
         echo $linha["nome"] . " " . $linha["sobrenome"] . " - " . $linha["telefone"] . "<br>";
     }
 } else {
