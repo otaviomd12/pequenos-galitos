@@ -22,7 +22,7 @@
 
 include  "conexao.php";
 
-if($_SERVER ["REQUEST_METHOD"]== "POST"){ 
+if($_SERVER["REQUEST_METHOD"]== "POST"){ 
 //COLETA DE DADOS
 
 $name= $_POST ["fnome"];
