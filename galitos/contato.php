@@ -12,10 +12,10 @@
     <label>Nome: </label><br>
     <Input type="etxt" name = "fname"><br>
     <label>SOBRENOME:</label><br>
-    <Imput type= "text" name = "fsobrenome"><br>
+    <Input type= "text" name = "fsobrenome"><br>
     <label>TELEFONE:</label><br>
-    <Imput type= "text" name = "fsobrenome"><br><br>
-    <Imput type= "submit" value = "Gravar">
+    <Input type= "text" name = "fsobrenome"><br><br>
+    <Input type= "submit" value = "Gravar">
 </form>
 
 <?php
