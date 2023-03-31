@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>  CADASTRO DE CONTATOS </h1>
-    <form action = "contato.php">
+    <form action="" method="post">
     <label>NOME:</label><br>
     <Imput type= "text" name = "fname"><br>
     <label>SOBRENOME:</label><br>
