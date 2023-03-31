@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt.br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda</title>
+    <title>Cadastro agenda</title>
 </head>
 <body>
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="wagner"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="willian">
-</form>
-    <h1>  CADASTRO DE CONTATOS </h1>
-    <form action="" method="post">
-    <label>Nome: </label><br>
-    <Input type="txt" name = "fname"><br>
-    <label>SOBRENOME:</label><br>
-    <Input type= "text" name = "fsobrenome"><br>
-    <label>TELEFONE:</label><br>
-    <Input type= "text" name = "fsobrenome"><br><br>
-    <Input type= "submit" value = "Gravar">
+    <h1>Cadastro Agenda</h1>
+
+    <!-- Formulário HTML -->
+<form action="" method="post">
+  <label>Nome: </label><br>
+  <input type="text" name="nome"><br>
+  <label>Sobrenome: </label><br>
+  <input type="text" name="sobrenome"><br>
+  <label>Telefone: </label><br>
+  <input type="text" name="telefone"><br>
+  <input type="submit" value="Gravar">
 </form>
 
 <?php
 
-include  "conexao.php";
+    
 
-if($_SERVER["REQUEST_METHOD"]== "POST"){ 
-//COLETA DE DADOS
 
-$name= $_POST ["fnome"];
-$sobrenome= $_POST ["fsobrenome"];
-$telefone= $_POST ["ftelefone"];
+//variaveis da conexão do banco dados
 
-//INSERIR DADOS NA TABELA
+include "conexao.php";
 
-$sql= "INSERT INTO db (nome, sobrenome, telefone) VALUES ('$nome, $sobrenome,$telefone')";
 
-if ($conn-> query ($sql) === TRUE) {echo "dados inseridos com sucesso"."<br>";
-}else{
-    echo"ERRO:".$conn-> error;
+
+// Verifica se o formulário foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Coleta os dados do formulário
+  $nome = $_POST["nome"];
+  $sobrenome = $_POST["sobrenome"];
+  $telefone = $_POST["telefone"];
+
+  // Insere os dados no banco de dados
+  $sql = "INSERT INTO agenda (nome, sobrenome, telefone) VALUES ('$nome', '$sobrenome', '$telefone')";
+  if ($conn->query($sql) === TRUE) {
+    echo "Dados inseridos com sucesso"."<br>";
+  } else {
+    echo "Erro ao inserir dados: " . $conn->error;
+  }
 }
-
-}
-
-
 $conn->close();
-
-
-
-
 ?>
 
 
-
-<a href= "index.php"> Consultar agenda </a>
+    <a href="index.php">Exibir Agenda</a>
+    
 </body>
 </html>
