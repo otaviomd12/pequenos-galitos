@@ -7,7 +7,7 @@
     <title>Agenda</title>
 </head>
 <body>
-    <h1>  INSERIR CONTATO N</h1>
+    <h1>  INSERIR CONTATO </h1>
     <form action = "contato.php" method="post">
     <label>NOME:</label><br>
     <Imput type= "text" name = "fname"><br>
@@ -23,7 +23,7 @@
 include  "conexao.php";
 
 
-if($_SERVER ["request_METHOD"]=="POST"){
+if($_SERVER ["request_METHOD"]==="POST"){
 //COLETA DE DADOS DO FORMULARIO
 
 
