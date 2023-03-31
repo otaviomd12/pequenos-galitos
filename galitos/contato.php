@@ -7,10 +7,16 @@
     <title>Agenda</title>
 </head>
 <body>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
     <h1>  CADASTRO DE CONTATOS </h1>
     <form action="" method="post">
     <label>Nome: </label><br>
-    <Input type="etxt" name = "fname"><br>
+    <Input type="txt" name = "fname"><br>
     <label>SOBRENOME:</label><br>
     <Input type= "text" name = "fsobrenome"><br>
     <label>TELEFONE:</label><br>
