@@ -7,8 +7,8 @@
     <title>Agenda</title>
 </head>
 <body>
-    <h1>  INSERIR CONTATO </h1>
-    <form action = "contato.php" method="post">
+    <h1>  CADASTRO DE CONTATOS </h1>
+    <form action = "contato.php">
     <label>NOME:</label><br>
     <Imput type= "text" name = "fname"><br>
     <label>SOBRENOME:</label><br>
@@ -33,7 +33,7 @@ $telefone= $_POST ["ftelefone"];
 
 $sql= "INSERT INTO db (nome, sobrenome, telefone) VALUES ('$nome, $sobrenome,$telefone')";
 
-if ($conn-> query ($sql) === TRUE) {echo "dados inseridos com sucesso"."<br>"."<br>";
+if ($conn-> query ($sql) === TRUE) {echo "dados inseridos com sucesso"."<br>";
 }else{
     echo"ERRO:".$conn-> error;
 }
