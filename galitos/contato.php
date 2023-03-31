@@ -23,18 +23,27 @@
 include  "conexao.php";
 
 
-IF($_SERVER ["request_METHOD"]=="POST"){
+if($_SERVER ["request_METHOD"]=="POST"){
 //COLETA DE DADOS DO FORMULARIO
-$
-$
-$
 
 
+$name= $_POST ["fnome"];
+$sobrenome= $_POST ["fsobrenome"];
+$sobrenome= $_POST ["ftelefone"];
+
+//INSERIR DADOS NA TABELA
+
+$sql= "INSERT INTO agenda (nome, sobrenome, telefone) VALUES ('$nome, $sobrenome,$telefone')";
+
+if ($conn-> query ($sql) === TRUE) {echo "dados inseridos com sucesso"."<br>";
+}else{
+    echo"ERRO:".$conn-> error;
+}
 
 }
 
 
-
+$conn->close();
 
 
 
