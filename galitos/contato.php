@@ -9,8 +9,8 @@
 <body>
     <h1>  CADASTRO DE CONTATOS </h1>
     <form action="" method="post">
-    <label>NOME:</label><br>
-    <Imput type= "text" name = "fname"><br>
+    <label>Nome: </label><br>
+    <Input type="etxt" name = "fname"><br>
     <label>SOBRENOME:</label><br>
     <Imput type= "text" name = "fsobrenome"><br>
     <label>TELEFONE:</label><br>
