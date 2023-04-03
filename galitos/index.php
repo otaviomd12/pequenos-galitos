@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>pneumoultramicroscopicossilicovulcanoconiótico</h1>
-    <p>
+    <h1 id="titulo">pneumoultramicroscopicossilicovulcanoconiótico</h1>
+    <p id="paragrafo1">
     Com 46 letras, pneumoultramicroscopicossilicovulcanoconiótico descreve indivíduo que possui doença pulmonar causada pela inspiração de cinzas vulcânicas. </p>
     
     <?php
