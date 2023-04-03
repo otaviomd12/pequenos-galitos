@@ -1,15 +1,25 @@
 body{
     background-color: #a4e2e2;
+    text-align: center;
+    font-family: arial;
 
+}
+
+.titulo {
+
+    text-align: center;
+    font-family: arial;
+    font-size: 23px;
 
 
 }
 
-.titulo1 {
+.paragrafo1 {
 
     text-align: left;
-    font-family: arial;
-    font-size: 15px;
+    font-family: Sans-Serif;
+    font-size: 20px;
+
 
 
 }

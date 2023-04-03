@@ -16,7 +16,7 @@
     //wagner willian santos, otávio marques domingos e gabriel herique sena silva
     echo 'maior palavra do dicionario'. '<br>'; ?> 
 
-   <?php
+   <?php 
 
 $servername= 'localhost'; 
 $username= 'id20481078_pequeno_db'; 
